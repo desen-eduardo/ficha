@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.1">
+</head>
+<body>
+    <div class="main">
+        <div class="principal">
+            <div class="topo">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </div>
+                <div class="texto">
+                    <h1>Instituto Cultural Scipião Rocha</h1>
+                </div>
+            </div>
+            <p>Ficha Técnica</p>
+            <hr>
+            <div class="conteudo">
+                <div class="pre-visualizacao">
+                    <div id="imagePreview" class="preview">Sem Foto</div>
+                    <input type="file" id="fileInput" accept="image/*">
+                </div>
+    
+                <div class="informacoes">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="musico">Músico:</label>
+                            <input type="text" name="musico" id="musico">
+                        </div>
+                        <div class="form-group">
+                            <label for="instrumento">Instrumento que toca:</label>
+                            <input type="text" name="intrumento" id="instrumento">
+                        </div>
+                        <div class="form-group">
+                            <label for="nasc">Data de nascimento:</label>
+                            <input type="date" name="nasc" id="nasc">
+                        </div>
+                        <div class="form-group">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" name="endereco" id="endereco">
+                        </div>
+                        <div class="form-group">
+                            <label for="pai">Filiacao pai:</label>
+                            <input type="text" name="pai" id="pai">
+                        </div>
+                        <div class="form-group">
+                            <label for="mae">Filiacao mãe:</label>
+                            <input type="text" name="mae" id="mae">
+                        </div>
+                    </form>
+                    <button type="button" class="btn-success" onclick="verificarData()">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div class="pdf" style="display: none;">
+            <div class="topo">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </div>
+                <div class="conteudo-texto">
+                    <div class="texto">
+                        <h1>Instituto Cultural Scipião Rocha</h1>
+                    </div>
+                    <div class="subtexto">
+                        Rua Vinte e Um de Abril, nº 199<br>
+                        CNPJ: 53.601188.0001.90<br>
+                        institutoculturalfilarmonicasc@gmail.com
+                    </div>
+                </div>
+                <div class="nota">
+                    <img src="./assets/images/nota.png" alt="nota">
+                </div>
+            </div>
+    
+            <div class="divisoria">
+                <img src="assets/images/dados.png" alt="">
+                <div class="faixa">Dados pessoais</div>
+            </div>
+    
+            <div class="conteudo">
+                <span class="span">Se quiser ajustar a foto, só clicar nela e movimentar para a posição desejada.</span>
+                <div class="visualizacao">
+                   <div id="foto" class="foto"> 
+                        <!-- <img class="photo"> -->
+                   </div> 
+                    <div class="dados">
+                        <span>Músico: </span><span class="musico">Wilmar Rocha Lopes</span><br>
+                        <span>Instrumento que toca: </span><span class="instrumento">Prato</span><br>
+                        <span>Data de Nascimento: </span><span class="data_nasc">26/12/1964</span><br>
+                        <span>Endereço: </span><span class="endereco">Av. Prefeito João Vicente Ferreira Filho, 73</span><br>
+                        <span>Data que começou a aprender música: ____/____/_______</span><br>
+                        <span>Data que tocou a primeira vez: ____/____/_______</span><br>
+                    </div>
+                </div>
+                <span>Filiação: </span><span class="filiacao">Ail Rocha Lopes e<br>Nadir Correa Lopes</span><br>
+                <span class="limite">Outros dados: <div class="linha"></div></span><br>
+                <div class="linha2"></div>
+                <span>Maestro: Nilton Martins</span>
+                
+                <div class="informacoes">
+                    <img src="./assets/images/marca.png" alt="marca">
+                </div>
+
+            </div>
+
+            <div class="btn">
+                <button class="btn-success" onclick="gerarPDF()">Gerar PDF</button>
+                <button class="btn-info" onclick="limpar()">Limpar</button>
+            </div>
+        </div>
+
+        <div class="dev"><a href="https://wa.me/+5522997112531" target="_blank">Desenvolvido por Angelo Eduardo Martins Paranhos (22)99711-2531</a></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/script.js?v=1.1"></script>
+</body>
+</html>
