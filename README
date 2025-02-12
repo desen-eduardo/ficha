@@ -1,7 +1,22 @@
-Projeto pessoal para ajudar a banda Instituto Cultural Scipião Rocha
+# Sistema de Ficha Técnica da Banda Instituto Cultural Scipião Rocha
 
-Esse projeto usa as seguintes tecnologias HTML,CSS e Javascript. 
-Não precisa de banco de dados, só para gerar o pdf usando o navegador apena para imprimir.
+Este é um projeto pessoal desenvolvido para ajudar a banda **Instituto Cultural Scipião Rocha** a organizar e gerar fichas técnicas dos músicos, contendo informações sobre os instrumentos que tocam e o tempo de atuação de cada um.
 
-# Esse sistema gera ficha técnica dos músicos com qual instrumento e tempo que toca.
+## Tecnologias Usadas
+
+- **HTML**: Estruturação das páginas e conteúdo.
+- **CSS**: Estilo e layout responsivo.
+- **JavaScript**: Interatividade e geração das fichas técnicas.
+
+## Funcionalidades
+
+- Geração de fichas técnicas para os músicos da banda.
+- Exibição do instrumento tocado e o tempo de atuação de cada músico.
+- Verificação de erros ortográficos e gramaticais no conteúdo gerado.
+
+## Como Usar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
