@@ -1,5 +1,7 @@
 Projeto pessoal para ajudar a banda Instituto Cultural Scipião Rocha
 
 Esse projeto usa as seguintes tecnologias HTML,CSS e Javascript. 
+Não precisa de banco de dados, só para gerar o pdf usando o navegador apena para imprimir.
 
 # Esse sistema gera ficha técnica dos músicos com qual instrumento e tempo que toca.
+
